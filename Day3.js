@@ -43,3 +43,17 @@ let nullToString = String(string2);
 // Converting Null to String
 console.log(typeof nullToString);
 console.log(nullToString); // Outputs: "null"
+
+
+/*******************Operations in javaScript********************/
+
+let value = 10;
+let negValue = -value; // Unary negation
+console.log(negValue); // Outputs: -10
+
+console.log(3+3);// 6
+console.log(10-5);// 5
+console.log(4*2);// 8
+console.log(20/4);// 5
+console.log(7%3);// 1
+console.log(2**3);// 8
