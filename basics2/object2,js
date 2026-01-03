@@ -1,0 +1,53 @@
+const bubbleUser = new Object();
+//Or
+// const bubbleUser = {}; // object literal
+
+//element Assigning
+
+bubbleUser.email = "pranjalkumar.google.com";
+bubbleUser.name = "Pranjal Kumar";
+bubbleUser.isLoggedIn = false;
+bubbleUser.age = 18;
+
+console.log(bubbleUser);
+
+const regularUser = {
+    name: {
+        fristname: "Pranjal",
+        lastname: "Kumar"
+    },
+    location: {
+        country: "India",
+        state: {1: "Madhya Pradesh", 2: "Uttar Pradesh", 3: "Bihar"},
+        district : "Rewa",
+        village : "Gorakhnath"
+    }
+}
+
+console.log(regularUser.name.fristname)
+console.log(regularUser.location.state[2]);
+
+
+//combing objects
+
+const obj1 = {
+    key1: "value1",
+    key2: "value2"
+}
+const obj2 = {
+    key3: "value3",
+    key4: "value4"
+}
+const obj3 = {
+    key5: "value5",
+    key6: "value6"
+}
+
+const combineObj = Object.assign({}, obj1, obj2, obj3)
+
+//Or
+
+const combineObj2 = {...obj1, ...obj2, ...obj3};
+
+console.log(combineObj);
+console.log(combineObj2);
