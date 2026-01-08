@@ -1,0 +1,30 @@
+> document.querySelectorAll('h1')
+
+    < NodeList(4) [h1#Head.heading, h1, h1, h1]
+
+> const allHeads = document.querySelectorAll('h1')
+    < undefined
+
+> allHeads[3].style.co
+
+    < undefined
+
+allHeads [3].style. color = 'red'
+
+    < 'red'
+
+> const allListEle = document.querySelectorAll('ul')
+
+    < undefined
+
+> allListEle. forEach((li) => li.style.color = 'blue')
+
+    < undefined
+
+const eachLi = document.querySelectorAll( 'li')
+
+    < undefined
+
+> eachLi[2].style.backgroundColor = 'red'
+
+    < 'red'

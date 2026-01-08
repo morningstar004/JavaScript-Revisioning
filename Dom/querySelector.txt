@@ -1,0 +1,37 @@
+document.querySelector('h1')
+    <h1 id="Head" class="heading">Dom learning</h1>
+
+document.querySelector('#paragraph')
+    <p class="para" id="paragraph"></p>
+
+document.querySelector('.para')
+    <p class="para" id="paragraph"></p>
+
+document.querySelector('h2')
+    <h2>Lorem, ipsum dolor .< /h2>
+
+
+//querySelector for dom manupulation
+
+>const list = document.querySelector('ul')
+    < undefined
+
+> list.querySelector('li')
+    < <list>one</list>
+
+const turnOrange = list.querySelector('li')
+
+    < undefined
+
+>turnOrange. style. color = 'orange'
+
+    < 'orange'
+
+> turnOrange. style.backgroundColor = 'green'
+    < 'green'
+
+> turnOrange. style.padding = '5px'
+    < '5px'
+
+>turnOrange. style. borderRadius = '5px'
+    < '5px'
