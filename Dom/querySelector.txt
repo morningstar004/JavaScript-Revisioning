@@ -23,15 +23,15 @@ const turnOrange = list.querySelector('li')
 
     < undefined
 
->turnOrange. style. color = 'orange'
+>turnOrange.style.color = 'orange'
 
     < 'orange'
 
-> turnOrange. style.backgroundColor = 'green'
+> turnOrange.style.backgroundColor = 'green'
     < 'green'
 
-> turnOrange. style.padding = '5px'
+> turnOrange.style.padding = '5px'
     < '5px'
 
->turnOrange. style. borderRadius = '5px'
+>turnOrange.style. borderRadius = '5px'
     < '5px'

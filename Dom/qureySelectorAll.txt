@@ -5,9 +5,6 @@
 > const allHeads = document.querySelectorAll('h1')
     < undefined
 
-> allHeads[3].style.co
-
-    < undefined
 
 allHeads [3].style. color = 'red'
 
