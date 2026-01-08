@@ -26,7 +26,7 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce((acc, item) => {
-    console.log(`acc: ${acc} and item.price: ${item.price}`)
+    console.log(`acc: ${acc} and item's price: ${item.price}`)
     return acc + item.price
 }, 0)
 
