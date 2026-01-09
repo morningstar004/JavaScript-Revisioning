@@ -1,0 +1,21 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "A simple project to change the background color of a webpage using JavaScript.",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "background",
+    "color",
+    "javascript",
+    "web"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
