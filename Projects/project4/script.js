@@ -1,4 +1,4 @@
-const randomNum = Math.floor(Math.random()*100+1)
+let randomNum = Math.floor(Math.random()*100+1)
 let count = 1;
 gameStart = true;
 
@@ -11,7 +11,7 @@ const result = document.querySelector('.lowOrHi')
 
 const p = document.createElement('p');
 
-const prevuserInput = []
+let prevuserInput = []
 
 if(gameStart){
   button.addEventListener('click',function(e){
@@ -58,27 +58,32 @@ function pushPreuserInputes(guess){
   round.innerHTML = `${11 - count} `;
 }
 function displayMessage(massage){
-  result.innerHTML = `<h2>${massage}</h2>`
+  result.innerHTML = `${massage}`
 }
 function endGame(){
   userInput.value = '';
   userInput.setAttribute('disabled', '');
   p.classList.add('newButton')
+  p.setAttribute('id','gameButton')
   p.innerText = 'Start New Game'
   result.appendChild(p)
   gameStart = false;
   startGame();
+  result.setAttribute('disabled','')
 }
 function startGame(){
-  const newGameButton = document.querySelector('.newButton')
+  const newGameButton = document.querySelector('#gameButton')
   newGameButton.addEventListener('click', function(e){
-    randomNumber = Math.floor(Math.random()*100+1)
+    randomNum = Math.floor(Math.random()*100+1)
     prevuserInput = []
-    round = 1;
+    count = 1;
     preuserInput.innerHTML=''
-    round.innerHTML = `${11-prevuserInput}`
+    round.innerHTML = `10`
     userInput.removeAttribute('disabled')
+    result.removeAttribute('disables')
+    result.innerHTML = ''
     result.removeChild(p);
+    set
 
     gameStart = true;
 
