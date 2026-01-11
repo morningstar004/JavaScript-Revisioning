@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+<script>
+    const reqURL = 'http://api.github.com/users/morningstar004'//my github accounts api 
+    const xhr = new XMLHttpRequest();// new is user b'coz XMLHttpRequest() is actully  a class and we want to put object properties on it.
+    xhr.open('GET',reqURL);
+    xhr.send();
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState)//is the tracker of the state the is currently runnning.
+        if(xhr.readyState === 3){
+            const data = JSON.parse(this.responseText)//JSON.parse() use to change datatype to Object.//this.responseText refers to the perticular api data that provided
+            console.log(data.name)
+        }
+    }
+    
+</script>
+</html>
