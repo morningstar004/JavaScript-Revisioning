@@ -33,4 +33,4 @@ Object.defineProperty(Owner,'name',{
 
 Owner.name = 'DevDeep'
 
-console.log(Owner.name);//name will not change because we set it as false..
+console.log(Owner.name);//name will not change because we set it as false.
