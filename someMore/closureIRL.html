@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #212121;">
+    <div>
+        <button class="Green">Green</button>
+        <button class="Yellow">Yellow</button>
+    </div>
+</body>
+<script>
+    function changeColor(color){
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.querySelector('.Green').onclick = changeColor('Green')
+    document.querySelector('.Yellow').onclick = changeColor('yellow')
+</script>
+</html>
